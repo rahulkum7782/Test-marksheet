@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: Arial, sans-serif;
+}
+
+.login {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: auto;
+    background: url('assets/buildings.png') no-repeat center/cover;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    backdrop-filter: brightness(40%) blur(4px);
+    height: 100%;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.6);
+}
+label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 5px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.2);
+    height: 40px;
+    border-radius: 20px;
+    padding: 0px 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.password-box {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+button {
+    background: linear-gradient(135deg, #2d7ee7, #1e5bbd);
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1e5bbd, #153a7c);
+    transform: scale(1.05);
+}
+
+#forgetBtn {
+  display: none;
+  background: crimson;
+}
